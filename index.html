@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixalpins Games - Pollopong</title>
+    <meta http-equiv="refresh" content="3;url=https://sites.google.com/view/pixalpinsgames">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .icon {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            animation: bounce 1s ease-in-out infinite;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+        
+        .redirect-message {
+            margin-top: 40px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: #FFF;
+            border-bottom-color: #FFF;
+        }
+        
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background: white;
+            color: #667eea;
+            transform: scale(1.05);
+        }
+        
+        .links {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        
+        .links a {
+            display: inline-block;
+            margin: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pollopong-icon.png" alt="Pollopong Icon" class="icon">
+        <h1>Pollopong</h1>
+        <p class="subtitle">by Pixalpins Games</p>
+        
+        <div class="redirect-message">
+            <div class="spinner"></div>
+            Redirecting to our website...
+        </div>
+        
+        <a href="https://sites.google.com/view/pixalpinsgames" class="button">
+            Visit Website Now
+        </a>
+        
+        <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.pollopong" target="_blank">
+                📱 Download on Google Play
+            </a>
+            <br>
+            <a href="mailto:pixalpins@gmail.com">
+                ✉️ Contact Us
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
